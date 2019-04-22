@@ -1,0 +1,27 @@
+<html prefix="smw: http://semantic-agent-policy#">
+<head>
+<title>ClickCheckboxBySynonymTaskPolicy</title>
+<meta  property="smw:url" content="smw:ClickCheckboxBySynonymTaskPolicy" />
+<meta about="[_:reward]" property="smw:hasValue" content="[_:positiveValue]" />
+<meta about="[_:reward]" property="smw:hasValue" content="[_:negativeValue]" />
+<meta about="[_:threshold]" property="smw:hasValue" content="0.7" />
+<meta about="[_:positiveValue]" property="smw:greaterThanOrEqual" content="[_:threshold]" />
+<meta about="[_:positiveValue]" property="smw:occurenceFactor" content="0.89" />
+<meta about="[_:negativeValue]" property="smw:lowerThan" content="[_:threshold]" />
+<meta about="[_:negativeValue]" property="smw:occurenceFactor" content="0.11" />
+<meta about="[_:agent]" property="smw:type" content="smw:Agent" />
+<meta about="[_:agent]" property="rdfs:label" content="DQNNAgent" />
+<meta about="[_:agent]" property="smw:appliesAlgorithm" content="DQNN" />
+<meta about="[_:agent]" property="smw:discountFactor" content="0.75" />
+<meta about="[_:agent]" property="smw:learningRate" content="0.01" />
+<meta about="[_:agent]" property="smw:greedyValue" content="0.1" />
+<meta about="[_:agent]" property="smw:trainedForTask" content="smw:MiniWobTask" />
+<meta about="[_:agent]" property="smw:developedBy" content="smw:Jon_Doe" />
+<meta property="smw:version" content="1.0" />
+<meta property="rdf:type" content="smw:Policy" />
+<meta property="smw:numberTrainedEpisodes" content="1000" />
+<meta property="smw:hasReward" content="[_:reward]" />
+<meta property="smw:trainedBy" content="[_:agent]" />
+</head>
+...
+</html>
