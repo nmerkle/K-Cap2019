@@ -11,7 +11,7 @@
 <meta about="[_:positiveValue]" property="smw:occurenceFactor" content="0.89" />
 <meta about="[_:negativeValue]" property="smw:lowerThan" content="[_:threshold]" />
 <meta about="[_:negativeValue]" property="smw:occurenceFactor" content="0.11" />
-<meta about="[_:agent]" property="smw:type" content="http://semantic-agent-framework#Category-3AAgent" />
+<meta about="[_:agent]" property="rdf:type" content="http://semantic-agent-framework#Category-3AAgent" />
 <meta about="[_:agent]" property="rdfs:label" content="DQNNAgent" />
 <meta about="[_:agent]" property="smw:appliesAlgorithm" content="DQNN" />
 <meta about="[_:agent]" property="smw:discountFactor" content="0.75" />
