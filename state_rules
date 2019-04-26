@@ -1,0 +1,35 @@
+OptionSelectableByLabel:
+  IsOption == 1 AND ListOptionClickedByLabel == 0 AND LabelsInInstructionText == 1 AND IsCheckbox == 0 AND IsFlightDatePicker == 0 AND IsFlightFromField == 0 AND IsFlightToField == 0
+  
+CheckboxSelectableByLabel:
+  IsCheckbox == 1 AND LabelsInInstructionText == 1 AND CheckboxClickedByLabel == 0 AND IsOption == 0 AND IsFlightDatePicker == 0 AND IsFlightFromField == 0 AND IsFlightToField == 0
+  
+CheckboxSelectableBySynonym:
+IsCheckbox == 1 AND LabelsInInstructionText == 1 AND CheckboxClickedBySynonym == 0 AND IsOption == 0 AND IsFlightDatePicker == 0 AND IsFlightFromField == 0 AND IsFlightToField == 0
+  
+SubmitButtonClickable:
+  (IsSubmitButton == 1 AND SubmitButtonClicked == 0) AND ((IsCheckbox == 1 OR IsOption == 1) AND (CheckboxClickedByLabel == 1 OR ListOptionClickedByLabel == 1)) 
+  
+ButtonSelectableByLabel:
+  (IsLabelButton == 1 OR IsSubmitButton == 1 OR IsSearchButton == 1) AND ButtonClickedByLabel == 0 AND LabelsInInstructionText == 1 AND IsCheckbox == 0 AND IsOption == 0 AND IsFlightDatePicker == 0 AND IsFlightFromField == 0 AND IsFlightToField == 0
+  
+FlightDateSelectableByPicker:
+  IsFlightDatePicker == 1 AND FlightDateEntered == 0 AND IsCheckbox == 0 AND IsOption == 0 AND IsSubmitButton == 0 AND IsLabelButton == 0 AND IsSearchButton == 1 AND IsFlightFromField == 1 AND IsFlightToField == 1 
+  
+SearchButtonClickable:
+  (IsSearchButton == 1 OR IsSubmitButton == 1 OR IsLabelButton == 1) AND SearchButtonClicked == 0 AND IsCheckbox == 0 AND IsOption == 0 AND IsFlightDatePicker == 1 AND IsFlightFromField == 1 AND IsFlightToField == 1 AND FlightFromEntered == 1 AND FlightToEntered == 1 AND FlightDateEntered == 1 
+  
+FlightFromEnterable:
+  IsFlightFromField == 1 AND FlightFromEntered == 0 AND IsCheckbox == 0 AND IsOption == 0 AND IsSubmitButton == 0 AND IsLabelButton == 0 AND IsFlightDatePicker == 1 AND IsSearchButton == 1 AND IsFlightToField == 1 
+  
+FlightToEnterable:
+  IsFlightToField == 1 AND FlightToEntered == 0 AND IsCheckbox == 0 AND IsOption == 0 AND IsSubmitButton == 0 AND IsLabelButton == 0 AND IsFlightDatePicker == 1 AND IsFlightToField == 1 AND IsSearchButton == 1
+  
+ShortestFlightBookable:
+  IsBookCheapest == 0 AND IsBookShortest == 1 AND FlightDateEntered == 1 AND FlightFromEntered == 1 AND FlightToEntered == 1 AND SearchButtonClicked == 1 
+  
+CheapestFlightBookable:
+  IsBookCheapest == 1 AND IsBookShortest == 0 AND FlightDateEntered == 1 AND FlightFromEntered == 1 AND FlightToEntered == 1 AND SearchButtonClicked == 1 
+  
+WebTaskFinished:
+ SubmitButtonClicked == 1 OR ButtonClickedByLabel == 1 OR CheapestFlightBooked == 1 OR ShortestFlightBooked == 1
