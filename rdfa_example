@@ -21,6 +21,8 @@
 <meta about="[_:agent]" property="smw:developedBy" content="http://semantic-agent-framework#Jon_Doe" />
 <meta property="smw:version" content="1.0" />
 <meta property="rdf:type" content="http://semantic-agent-framework#Category-3APolicy" />
+<meta property="smw:hasMeanPositiveReward" content="0.8" />
+<meta property="smw:hasMeanNegativeReward" content="0.2" />
 <meta property="smw:numberTrainedEpisodes" content="1000" />
 <meta property="smw:hasReward" content="[_:reward]" />
 <meta property="smw:trainedBy" content="[_:agent]" />
