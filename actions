@@ -1,0 +1,11 @@
+SelectOptionByLabel -- Selects a list option by the label given in the instruction text. 
+ClickCheckboxByLabel -- Clicks checkboxes by the label given in the instruction text.
+ClickCheckboxBySynonym -- Clicks checkboxes by the synonymous words given in the instruction text.
+ClickSubmitButton -- Clicks a submit button. This finishes the web task.
+ClickButtonByLabel -- Clicks a button by its label specified in the instruction text.
+EnterFlightDate -- Enters the flight date, specified in the instruction text.
+EnterFlightTo -- Enters the flight destination, specified in the instruction text.
+EnterFlightFrom -- Enters the departure location, specified in the instruction text.
+ClickSearchButton -- Clicks the search button for searching flight offers.
+BookCheapestFlight -- Books the cheapest flight from the given list of search results.
+BookShortestFlight -- Books the shortest flight from the given list of search results.
