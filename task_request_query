@@ -1,0 +1,78 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://${WIKI_HOST}/index.php/Special:URIResolver/>
+    CONSTRUCT {
+      :${AGENT}   rdf:type :Category-3AAgent.
+      :${AGENT}   :Property-3AHasLearningRate ?learningrate.
+      :${AGENT}   :Property-3AHasDiscountFactor ?discount.
+      :${AGENT}   :Property-3AHasEpsilon ?epsilon.
+      :${AGENT}   :Property-3AHasUsername ?username.
+      :${AGENT}   :Property-3AHasPassword ?password.
+      :${AGENT}   :Property-3ASubscribesFor ?topic.
+      :${AGENT}   :Property-3AHasTask ?task.
+      ?topic rdf:type :Category-3ATopic.
+      ?topic :Property-3AHasName ?topicName.
+      ?topic   :Property-3AHasObservationFeature ?topicFeature.
+      ?task rdf:type :Category-3ATask.
+      ?task    :Property-3AHasStatus ?status.
+      ?task    :Property-3AHasState ?state.
+      ?task    :Property-3AHasObservationFeature ?feature.
+      ?task    :Property-3AHasAction ?action.
+      ?feature rdf:type :Category-3AObservationFeature.
+      ?feature :Property-3AHasFeatureType ?featType.
+      ?feature :Property-3AHasRangeEnd ?rangeEnd.
+      ?feature :Property-3AHasRangeStart ?rangeStart.
+      ?feature :Property-3AHasObservationFeature ?subFeat.
+      ?subFeat rdf:type :Category-3AObservationFeature.
+      ?subFeat :Property-3AHasFeatureType ?subFeatType.
+      ?subFeat :Property-3AHasRangeStart ?subFeatRangeStart.
+      ?subFeat :Property-3AHasRangeEnd ?subFeatRangeEnd.
+      ?state rdf:type :Category-3AState.
+      ?state   :Property-3AHasExpression ?stateRule.
+      ?state   :Property-3AIsGoal ?goal.
+      ?state   :Property-3AHasObservationFeature ?stateFeature.
+      ?state   :Property-3AHasAction ?stateAction.
+      ?state   :Property-3AHasReward ?reward.
+      ?action rdf:type :Category-3AAction.
+      ?action  :Property-3AHasEffect ?effect.
+      ?action  :Property-3AHasText ?text.
+      ?effect rdf:type :Category-3AEffect.
+      ?effect  :Property-3AHasImpactRange ?impact.
+      ?effect  :Property-3AHasImpactType ?type.
+      ?effect  :Property-3AHasObservationFeature ?effectFeature.
+      ?effect :Property-3AHasRewardRule ?rewardRule.
+      ?effect :Property-3AHasPunishmentRule ?punishmentRule.
+    } where {
+      :${AGENT}   rdf:type :Category-3AAgent.
+      :${AGENT}   :Property-3AHasLearningRate ?learningrate.
+      :${AGENT}   :Property-3AHasDiscountFactor ?discount.
+      :${AGENT}   :Property-3AHasEpsilon ?epsilon.
+      :${AGENT}   :Property-3AHasUsername ?username.
+      :${AGENT}   :Property-3AHasPassword ?password.
+      :${AGENT}   :Property-3ASubscribesFor ?topic.
+      :${AGENT}   :Property-3AHasTask ?task.
+      ?topic   :Property-3AHasObservationFeature ?topicFeature.
+      ?topic   :Property-3AHasName ?topicName.
+      ?task    :Property-3AHasStatus ?status.
+      ?task    :Property-3AHasState ?state.
+      ?task    :Property-3AHasObservationFeature ?feature.
+      ?task    :Property-3AHasAction ?action.
+      ?feature :Property-3AHasFeatureType ?featType.
+      OPTIONAL {?feature :Property-3AHasRangeEnd ?rangeEnd.}
+      OPTIONAL {?feature :Property-3AHasRangeStart ?rangeStart.}
+      OPTIONAL {?feature :Property-3AHasObservationFeature ?subFeat.
+      ?subFeat :Property-3AHasFeatureType ?subFeatType.
+      ?subFeat :Property-3AHasRangeStart ?subFeatRangeStart.
+      ?subFeat :Property-3AHasRangeEnd ?subFeatRangeEnd.}
+      ?state   :Property-3AHasExpression ?stateRule.
+      ?state   :Property-3AIsGoal ?goal.
+      ?state   :Property-3AHasObservationFeature ?stateFeature.
+      OPTIONAL {?state   :Property-3AHasAction ?stateAction.}
+      ?state   :Property-3AHasReward ?reward.
+      ?action  :Property-3AHasEffect ?effect.
+      OPTIONAL {?action  :Property-3AHasText ?text.}
+      ?effect  :Property-3AHasImpactRange ?impact.
+      ?effect  :Property-3AHasImpactType ?type.
+      OPTIONAL {?effect  :Property-3AHasObservationFeature ?effectFeature.}
+      OPTIONAL {?effect :Property-3AHasRewardRule ?rewardRule.}
+      OPTIONAL {?effect :Property-3AHasPunishmentRule ?punishmentRule.}
+    }
