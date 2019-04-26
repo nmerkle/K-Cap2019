@@ -1,3 +1,4 @@
+## Set of action for the Miniwob Task
 SelectOptionByLabel -- Selects a list option by the label given in the instruction text. 
 ClickCheckboxByLabel -- Clicks checkboxes by the label given in the instruction text.
 ClickCheckboxBySynonym -- Clicks checkboxes by the synonymous words given in the instruction text.
