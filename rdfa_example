@@ -26,9 +26,6 @@
 <meta property="smw:numberTrainedEpisodes" content="1000" />
 <meta property="smw:hasReward" content="[_:reward]" />
 <meta property="smw:trainedBy" content="[_:agent]" />
-<meta property="smw:hasPrecisionFactor" content="1.0" />
-<meta property="smw:hasRecallFactor" content="0.982" />
-<meta property="smw:hasF1Factor" content="0.9909" />
 </head>
 ...
 </html>
