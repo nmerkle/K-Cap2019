@@ -1,0 +1,5 @@
+| Task: Choose list    | mean pos. reward | mean neg. reward | standar deviation  pos. reward | standard deviation  neg. reward | variance pos. reward | variance neg. reward |
+|----------------------|------------------|------------------|--------------------------------|---------------------------------|----------------------|----------------------|
+| Rule-based Agent     | 0.7368           | NA               | 0.0982                         | NA                              | 0.0096               | NA                   |
+| Trained DQNN Agent   | 0.8285           | -0.3305          | 0.1555                         | 0.3616                          | 0.0242               | 0.1307               |
+| Untrained DQNN Agent | 0.2432           | -0.4424          | 0.1251                         | 0.2756                          | 0.0157               | 0.0759               |
