@@ -1,0 +1,5 @@
+| Task: Click Button   | mean pos. reward | mean neg. reward | standar deviation  pos. reward | standard deviation  neg. reward | variance pos. reward | variance neg. reward |
+|----------------------|------------------|------------------|--------------------------------|---------------------------------|----------------------|----------------------|
+| Rule-based Agent     | 0.9678           | NA               | 0.0350                         | NA                              | 0.0012               | NA                   |
+| Trained DQNN Agent   | 0.7597           | NA               | 0.0563                         | NA                              | 0.0032               | NA                   |
+| Untrained DQNN Agent | 0.9331           | -0.183           | 0.0819                         | NA                              | 0.0067               | NA                   |
