@@ -1,0 +1,5 @@
+| Agent                | Precision in % | Recall in % | F1 in % |
+|----------------------|----------------|-------------|---------|
+| Trained DQNN Agent   | 98.2           | 98.2        | 98.2    |
+| Untrained DQNN Agent | 60.6           | 60.6        | 60.6    |
+| Rule-based Agent     | 43.2           | 43.2        | 43.2    |
