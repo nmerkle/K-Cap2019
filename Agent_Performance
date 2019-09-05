@@ -1,5 +1,5 @@
-| Agent                | Choose List Performance in % | Click Button Performance in % | Click Button Sequence Performance in % | Click Checkboxes Soft Performance in % |
-|----------------------|------------------------------|-------------------------------|----------------------------------------|----------------------------------------|
-| Trained DQNN Agent   | 99.6                         | 100                           | 99.1                                   | 98.2                                   |
-| Untrained DQNN Agent | 53.9                         | 99.9                          | 79.6                                   | 60.6                                   |
-| Rule-based Agent     | 100                          | 100                           | 99.9                                   | 43.2                                   |
+| Agent/Task           | Choose List pos. Rewards in % | Click Button pos. Rewards in % | Click Button Sequence pos. Rewards in % | Click Checkboxes Soft pos. Rewards in % |
+|----------------------|-------------------------------|--------------------------------|-----------------------------------------|-----------------------------------------|
+| Trained DQNN Agent   | 99.6                          | 100                            | 99.1                                    | 98.2                                    |
+| Untrained DQNN Agent | 53.9                          | 99.9                           | 79.6                                    | 60.6                                    |
+| Rule-based Agent     | 100                           | 100                            | 99.9                                    | 43.2                                    |
