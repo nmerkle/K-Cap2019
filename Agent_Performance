@@ -1,5 +1,5 @@
-| Agent                | Precision in % | Recall in % | F1 in % |
-|----------------------|----------------|-------------|---------|
-| Trained DQNN Agent   | 98.2           | 98.2        | 98.2    |
-| Untrained DQNN Agent | 60.6           | 60.6        | 60.6    |
-| Rule-based Agent     | 43.2           | 43.2        | 43.2    |
+| Agent                | Choose List Performance in % | Click Button Performance in % | Click Button Sequence Performance in % | Click Checkboxes Soft Performance in % |
+|----------------------|------------------------------|-------------------------------|----------------------------------------|----------------------------------------|
+| Trained DQNN Agent   | 99.6                         | 100                           | 99.1                                   | 98.2                                   |
+| Untrained DQNN Agent | 53.9                         | 99.9                          | 79.6                                   | 60.6                                   |
+| Rule-based Agent     | 100                          | 100                           | 99.9                                   | 43.2                                   |
