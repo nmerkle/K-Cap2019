@@ -1,0 +1,5 @@
+| Task: click checkboxes | mean  pos. reward | mean  neg. reward | standard deviation  pos. reward | standard deviation  neg. reward | variance  pos. reward | variance  neg. reward |
+|------------------------|-------------------|-------------------|---------------------------------|---------------------------------|-----------------------|-----------------------|
+| Rule-based agent       | 0.3181            | -0.1511           | 0.1687                          | 0.1779                          | 0.0284                | 0.0316                |
+| Trained DQNN agent     | 0.8012            | -0.3183           | 0.1733                          | 0.2236                          | 0.03                  | 0.05                  |
+| Untrained DQNN agent   | 0.4034            | -0.3876           | 0.2136                          | 0.2514                          | 0.0456                | 0.0632                |
